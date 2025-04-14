@@ -242,7 +242,17 @@ img {
     background-color: white;
     border-radius: 50%;
     z-index: -1;
+    animation: twinkle 2s infinite ease-in-out;
+    opacity: 0.5;
+    animation-delay: calc(0.1s * var(--i));
 }
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+
 
 @keyframes orbit {
     to {
